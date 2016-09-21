@@ -5,73 +5,81 @@ Place your responses inside the fenced code-blocks where indicated by comments.
 What is the purpose of a backend?
 
 ```bash
-// your response here
+data persistence
 ```
 
 Which layer in the MVC pattern is used by the controller to fetch data?
 
 ```bash
-// your response here
+model
 ```
 
 Which layer in the MVC pattern communicates with the model?
 
 ```bash
-// your response here
+controller
 ```
 
 Why don't we use views in our interpretation of the MVC pattern?
 
 ```bash
-// your response here
+We are using Rails solely for API purposes. We will use javascript for front end parts of our applications.
 ```
 
 What does C.R.U.D stand for?
 
 ```bash
-// your response here
+CREATE, READ, UPDATE, DELETE
 ```
 
 In which part of the MVC pattern can we find C.R.U.D actions?
 
 ```bash
-// your response here
+Routes
 ```
 
 List at least 5 standard actions that C.R.U.D corresponds to?
 
 ```bash
-// your response here
+POST, GET, PATCH, PUT, DELETE
 ```
 
 A user action fires a `GET` request for `/persons/1`. Explain in detail each step
 required for data to be returned to the client. (bullet points or ordered list)
 
 ```bash
-// your response here
+- Client makes HTTP request to server
+- Server finds controller and gives request information
+- Controller communicates with model if all information needed is correct
+- Model interacts with database to find information.
+- Model returns information to controller
+- Controller sends info back to Server
+- Server sends info back to client
 ```
 
 What is the command to generate a new rails-api app?
 
 ```bash
-// your response here
+rails-api new app_name
 ```
 
 What is the command to start an instance of a rails server?
 
 ```bash
-// your response here
+bundle exec rails s
 ```
 
 What are the commands to drop, create and migrate a database? (3 bullet points)
 
 ```bash
-// your response here
+- bundle exec rake db:drop
+- bundle exec rake db:create
+- bundle exec rake db:migrate
 ```
 
 What is the command to scaffold a pet with a name and age attributes (hint:
 Also think of the data types for each attribute)?
 
 ```bash
-// your response here
+bundle exec rails-api g scaffold pet name:string age:integer
 ```
